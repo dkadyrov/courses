@@ -1,0 +1,17 @@
+\frametitle{Functions}
+\framesubtitle{Lambda Functions}
+    A lambda function is a small anonymous function. It can take any number of arguments, but can only have one expression.\\~\
+
+    The following code snippet defines a lambda function that takes a number as an argument and returns the square of that number:
+
+    \begin{lstlisting}[language=Python]
+square = lambda x: x**2
+    \end{lstlisting}
+
+    The function can be called as follows:
+
+    \begin{lstlisting}[language=Python]
+square(5)
+    \end{lstlisting}
+
+    The output of the function call is: \texttt{25}

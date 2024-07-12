@@ -1,0 +1,185 @@
+\documentclass[
+    aspectratio=169, 
+    usepdftitle=false, 
+    xcolor={dvipsnames},
+    hyperref={
+        colorlinks,
+        linkcolor=black,
+        urlcolor=blue}
+    ]{beamer}
+\usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{soul}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    columns=fullflexible,
+    frame=single,
+    breaklines=true,
+    xleftmargin=10pt,
+    xrightmargin=10pt,
+}
+% \usepackage{xcolor}
+
+\hypersetup{colorlinks,urlcolor=blue}
+\addtobeamertemplate{headline}{\hypersetup{linkcolor=.}}{}
+\addtobeamertemplate{footline}{\hypersetup{linkcolor=.}}{}
+
+\definecolor{Light}{gray}{.90}
+\sethlcolor{Light}
+
+\let\OldTexttt\texttt
+\renewcommand{\texttt}[1]{\OldTexttt{\hl{#1}}}% will affect all \texttt
+
+\title[Course Introduction]{Introduction to Python Objects and Expressions}
+\subtitle{Lecture 0: Course Introduction}
+\author{Daniel Kadyrov}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Agenda}
+    \tableofcontents
+\end{frame}
+
+\section{Group Introduction}
+\begin{frame}{Group Introduction}
+    \framesubtitle{Group Survey}
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Fill out this survey}
+                \url{https://forms.gle/VM3yhQr4FZrhaCXz6}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}  %%<--- here
+            \begin{center}
+             \includegraphics[width=0.5\textwidth]{qr-code.pdf}
+             \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Course Information}
+    \framesubtitle{Learning Objectives}
+    \begin{itemize}
+        \item Learn the basics of Python programming including data structures, functions, and classes while utilizing industry standard programs and packages to develop, test, debug, and collaborate on projects
+        \item Set the foundations of using Python for data science applications including:
+        \begin{itemize}
+            \item Collecting, parsing, sanitizing and cleaning, standardizing, and exploring datasets
+            \item Generating visualizations including graphics, tables, and figures
+            \item Determine trends and report conclusions from analysis
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Course Information}
+    \framesubtitle{Assignments}
+    \begin{itemize}
+        \item Daily assignments on the materials we learned in class. Most likely you will work on these assignments through the end of class and submit them at the beginning at the beginning of the next class
+        \item There will be a final project that will be presented at the end of the semester that will be a culmination of the skills we learned in class
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Course Information}
+    \framesubtitle{Office Hours and Contact Information}
+    \begin{itemize}
+        \item Office hours will be by appointment only
+        \item Contact email: daniel.kadyrov@gmail.com
+    \end{itemize}
+\end{frame}
+
+\section{Course Downloads}
+\begin{frame}{Course Downloads}
+\begin{enumerate}
+    \item Git and GitHub
+    \item Python through PyEnv
+    \item Visual Studio Code
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{GitHub}
+    \framesubtitle{Create a GitHub student account}
+
+    GitHub offers free accounts to students. It comes with unlimited public repositories and unlimited collaborators as well as other perks. You will need to verify your student status.
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Sign up here}
+                \url{https://education.github.com/}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}  %%<--- here
+            \begin{center}
+             \includegraphics[width=0.5\textwidth]{qr-code.pdf}
+             \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{GitHub}
+    \framesubtitle{Download and install Git}
+
+    Git is a way to manage your code and collaborate with others. It is a version control system that allows you to track changes to your code and revert back to previous versions if necessary. It also allows you to collaborate with others on the same code base.
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Download Git here}
+                \url{https://git-scm.com/downloads}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}  %%<--- here
+            \begin{center}
+             \includegraphics[width=0.5\textwidth]{qr-code.pdf}
+             \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{GitHub}
+    \framesubtitle{Course Repository}
+
+    The coursework, including all documents, assignments, and code will be hosted on GitHub. You will need to fork the repository to your own GitHub account. This will allow you to make changes to the code without affecting the original code. You will also be able to download the code, through cloning, to your local machine.
+
+    \begin{block}{Course Repository}
+        \url{https://github.com/dkadyrov/introductiontopython}
+    \end{block}
+    
+\end{frame}
+
+\begin{frame}[fragile]{GitHub}
+    \framesubtitle{Fork and clone the repository}
+
+    To fork the repository, go to the repository in your browser and click the fork button in the top right corner. This will create a copy of the repository in your GitHub account. To clone the repository, go to the repository in your browser and click the green code button. Copy the link.\\~\
+
+    In terminal, you can navigate to the directory you want to clone the repository to through the \texttt{cd} command. Then, type \texttt{git clone <link>} where \texttt{<link>} is the link you copied from the repository. This will create a copy of the repository on your local machine. This is demonstrated in the following code block:
+
+    \begin{lstlisting}
+cd Documents
+cd "Columbia Summer Course"
+git clone <link>
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}{Python}
+    \framesubtitle{Installing Python}
+    
+    Download and install Python for your operating system (OS) using the following link: \url{https://www.python.org/downloads/} 
+
+    You can also utilize managers such as Anaconda and PyEnv to manage your Python installations.
+\end{frame}
+
+\begin{frame}{Visual Studio Code}
+    \begin{enumerate}
+        \item Download and install \href{https://code.visualstudio.com/download}{Visual Studio Code}
+        \item Install the Python extension
+        \item Choose your theme! 
+    \end{enumerate}
+\end{frame}
+
+\end{document}

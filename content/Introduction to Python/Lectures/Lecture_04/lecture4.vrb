@@ -1,0 +1,8 @@
+\frametitle{Writing Packages}
+\begin{itemize}
+        \item A package is a collection of Python modules.
+        \item A package is a directory containing \texttt{\_\_init\_\_.py} file.
+        \item This file can be empty, and it indicates that the directory it contains is a Python package, so it can be imported the same way a module can be imported.
+        \item A package can contain subpackages, which are subdirectories containing again a \texttt{\_\_init\_\_.py} file, and submodules, which are Python scripts like any other Python modules.
+        \item A package can also contain \texttt{c-extensions}, which are compiled C code.
+    \end{itemize}

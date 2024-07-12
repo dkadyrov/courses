@@ -1,0 +1,12 @@
+\frametitle{GitHub}
+\framesubtitle{Fork and clone the repository}
+
+    To fork the repository, go to the repository in your browser and click the fork button in the top right corner. This will create a copy of the repository in your GitHub account. To clone the repository, go to the repository in your browser and click the green code button. Copy the link.\\~\
+
+    In terminal, you can navigate to the directory you want to clone the repository to through the \texttt{cd} command. Then, type \texttt{git clone <link>} where \texttt{<link>} is the link you copied from the repository. This will create a copy of the repository on your local machine. This is demonstrated in the following code block:
+
+    \begin{lstlisting}
+cd Documents
+cd "Columbia Summer Course"
+git clone <link>
+    \end{lstlisting}

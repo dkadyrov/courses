@@ -1,0 +1,15 @@
+\frametitle{Nested Conditionals}
+\begin{itemize}
+        \item Here is another example of nested conditionals:
+        \begin{lstlisting}[language=Python]
+if x > 0:
+    if x > 10:
+        print("x is greater than 10")
+    elif x > 5:
+        print("x is between 5 and 10")
+    else:
+        print("x is between 0 and 5")
+else:
+    print("x is less than or equal to 0")
+        \end{lstlisting}
+    \end{itemize}

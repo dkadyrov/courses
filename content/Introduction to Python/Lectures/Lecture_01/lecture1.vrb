@@ -1,0 +1,34 @@
+\frametitle{Data Types}
+\framesubtitle{String: Examples}
+
+    The following code demonstrates some of the methods available for strings:
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+
+            \begin{lstlisting}[language=Python]
+s = "Hello World!"
+print(s)
+print(s.upper())
+print(s.lower())
+print(s.replace("World", "Python"))
+print(s.split(" "))
+print(" ".join(["Hello", "World!"]))
+print(s[0])
+print(s[0:5])
+            \end{lstlisting}
+
+        \end{column}
+        \begin{column}{0.4\textwidth}
+\begin{lstlisting}[style=output]
+Hello World!
+HELLO WORLD!
+hello world!
+Hello Python!
+['Hello', 'World!']
+Hello World!
+H
+Hello
+            \end{lstlisting}
+        \end{column}
+    \end{columns}

@@ -1,0 +1,13 @@
+\frametitle{Objects and Classes}
+\framesubtitle{Example}
+    \begin{lstlisting}[language=Python]
+class MyClass:
+    x = 5
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print("Hello my name is " + self.name)
+    def myfunc2(self):
+        print("Hello my age is " + str(self.age))
+    \end{lstlisting}
