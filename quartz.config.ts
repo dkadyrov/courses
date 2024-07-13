@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Daniel Kadyrov's Courses",
+    pageTitle: "Courses",
     enableSPA: true,
     enablePopovers: false,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "dkadyrov.github.io/courses",
+    baseUrl: "dkadyrov.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
