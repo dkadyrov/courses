@@ -24,7 +24,7 @@ Python is used in a wide variety of fields, including:
 Python is an interpreted language, which means that Python code is executed line by line.
 
 The programs, also called scripts, are plain text files with the .py extension. You can run the programs through the following methods:
-- Running Python scripts from the command line or terminal by typing \texttt{python script.py} where script.py is the name of the script.
+- Running Python scripts from the command line or terminal by typing `python script.py` where script.py is the name of the script.
 - Within VSCode with the jupyter notebook extension or the debug tool
 
 ## Hello World! 
@@ -56,7 +56,7 @@ The print() function prints the specified message to the screen. This message ca
 Comments are used to explain Python code.
 Comments are ignored by the Python interpreter.
 Comments can be used to prevent execution when testing code.
-Comments start with a \texttt{\#} and end at the end of the line.
+Comments start with a `\#` and end at the end of the line.
 Comments can be placed on a line by themselves, or at the end of a line of code.
 
 ```Python
@@ -144,8 +144,8 @@ This code will output the following:
 
 Boolean values are the two constant objects False and True. 
 - Boolean values are used to evaluate conditions.
-- The comparison operators \texttt{==}, \texttt{!=}, \texttt{>}, \texttt{<}, \texttt{>=}, \texttt{<=} return boolean values.
-- The boolean operators \texttt{and}, \texttt{or}, and \texttt{not} are used to combine boolean values.
+- The comparison operators `==`, `!=`, `>`, `<`, `>=`, `<=` return boolean values.
+- The boolean operators `and`, `or`, and `not` are used to combine boolean values.
 
 ```Python
 x = True
@@ -171,7 +171,7 @@ Python has three sequence types: list, tuple, and range.
     - **insert()** to insert an item at a specified index.
     - **remove()** to remove an item from the list.
     - **pop()** to remove an item at a specified index.
-- Lists can also be indexed and sliced like strings through the use of square brackets \texttt{[]}
+- Lists can also be indexed and sliced like strings through the use of square brackets `[]`
 - There are many more methods available for lists available in the Python documentation at [Python Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 
 The following code demonstrates some of the methods available for lists:
@@ -204,7 +204,7 @@ This code will output the following
 
 Dictionaries are unordered, changeable, and indexed collections of key-value pairs.
 - Dictionaries are indexed by keys, which can be any immutable type.
-- Dictionaries are created using curly brackets \texttt{\{\}} and key-value pairs separated by commas.
+- Dictionaries are created using curly brackets `\{\`` and key-value pairs separated by commas.
 - Dictionaries have several methods for manipulating them including:
     - **get()** to get the value of a specified key.
     - **pop()** to remove an item with a specified key.
@@ -220,7 +220,7 @@ x = {
     "name": "John",
     "age": 36,
     "country": "Norway"
-}
+`
 print(x)
 print(x["name"])
 print(x.get("age"))
@@ -232,10 +232,10 @@ print(x.values())
    
 This code will output the following:
 
-> {'name': 'John', 'age': 36, 'country': 'Norway'}  
+> {'name': 'John', 'age': 36, 'country': 'Norway'`  
 > John  
 > 36  
-> {'name': 'John', 'age': 37, 'country': 'Norway'}  
+> {'name': 'John', 'age': 37, 'country': 'Norway'`  
 > dict_keys(['name', 'age', 'country'])  
 > dict_values(['John', 37, 'Norway'])  
 
@@ -243,11 +243,11 @@ This code will output the following:
 
 Strings in Python are sequences of characters enclosed in single or double quotes.
 - A multitude of methods are available for manipulating strings including:
-    - **upper()** and \texttt{lower()} to convert the string to uppercase or lowercase.
+    - **upper()** and `lower()` to convert the string to uppercase or lowercase.
     - **replace()** to replace a substring with another substring.
     - **split()** to split the string into a list of substrings.
     - **join()** to join a list of strings into one string.
-    - Strings can also be indexed and sliced like lists through the use of square brackets \texttt{[]}
+    - Strings can also be indexed and sliced like lists through the use of square brackets `[]`
 
 There are many more methods available for strings available in the Python documentation at [Python Strings](https://docs.python.org/3/library/stdtypes.html#string-methods)
 

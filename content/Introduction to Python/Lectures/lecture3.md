@@ -11,9 +11,9 @@ A function is a block of code which only runs when it is called.
 - You can pass data, known as parameters, into a function.
 - A function can return data as a result.
 - Functions are used to perform certain actions, and they are important for reusing code
-- Functions are defined using the \texttt{def} keyword.
-- The \texttt{def} keyword is followed by the function name, parentheses \texttt{()}, and a colon \texttt{:}.
-- The \texttt{return} keyword is used to return a value from the function.
+- Functions are defined using the `def` keyword.
+- The `def` keyword is followed by the function name, parentheses `()`, and a colon `:`.
+- The `return` keyword is used to return a value from the function.
 
 The following code snippet defines a function that prints a string passed to it as an argument in reverse order: 
 
@@ -111,4 +111,4 @@ square(5)
 
 The output of the function call is: 
 
-> \texttt{25}
+> `25`
