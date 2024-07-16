@@ -14,7 +14,7 @@ Using the dataset, you will perform the following tasks:
 - Visualize the data and communicate your findings using at least one graph.
 - Narrate your work and explain your reasoning and conclusions.
 
-You will use pandas, a popular Python library for data manipulation and analysis, to perform most of the tasks. You will also use other libraries, such as matplotlib, seaborn, or plotly, to generate your graphs. You will document your work using LaTeX or markdown, two common formats for online publication. You will also create a slideshow to present your project to the class.
+You will use pandas, a popular Python library for data manipulation and analysis, to perform most of the tasks. You will also use other libraries, such as `matplotlib`, `seaborn`, or `plotly`, to generate your graphs. You will document your work using LaTeX or markdown, two common formats for online publication. You will also create a slideshow to present your project to the class.
 
 You will upload your project deliverable (code, writeup, and slideshow) to Github, a platform for hosting and sharing code. You will also submit a link to your Github repository and your online writeup (using a service such as Overleaf or Github Pages) to the instructor.
 
